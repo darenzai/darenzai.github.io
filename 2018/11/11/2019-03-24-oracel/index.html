@@ -260,7 +260,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g431p85495j31930u0hdt.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/首页12.jpeg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1666,30 +1666,30 @@ SQL-&gt; 查询员工表中一共有多少条员工数据
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2018/11/17/2018-04-06-tu-de-zui-duan-lu-wen-ti/">
+                <a href="/2018/12/01/2019-02-01-shu-ju-ku-shi-qu-ge-shi-cuo-wu/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g430p9ahsij31460u0npd.jpg" class="responsive-img" alt="图的最短路">
+                        <img src="/images/首页9.jpeg" class="responsive-img" alt="数据库时区格式错误">
                         
-                        <span class="card-title">图的最短路</span>
+                        <span class="card-title">数据库时区格式错误</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            图的最短路
+                            老师上课讲的Oracle跟着老师的写了一下。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-17
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数据结构/" class="post-category" target="_blank">
-                                    数据结构
+                            <a href="/categories/数据库/" class="post-category" target="_blank">
+                                    数据库
                                 </a>
                             
                             
@@ -1699,8 +1699,8 @@ SQL-&gt; 查询员工表中一共有多少条员工数据
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/图/" target="_blank">
-                        <span class="chip bg-color">图</span>
+                    <a href="/tags/Mysql/" target="_blank">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
                 </div>
@@ -1717,7 +1717,7 @@ SQL-&gt; 查询员工表中一共有多少条员工数据
                 <a href="/2018/11/07/2018-03-26-er-cha-ping-heng-shu/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g430ehfrmnj319b0u01ky.jpg" class="responsive-img" alt="二叉平衡树">
+                        <img src="/images/首页3.jpeg" class="responsive-img" alt="二叉平衡树">
                         
                         <span class="card-title">二叉平衡树</span>
                     </div>
@@ -1761,6 +1761,43 @@ SQL-&gt; 查询员工表中一共有多少条员工数据
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + 'From: 胡佳艺<br />'
+            + 'Author: Darenzai<br />'
+            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
     
 
@@ -1776,7 +1813,7 @@ SQL-&gt; 查询员工表中一共有多少条员工数据
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">40.7k</span>
+                <span class="white-color">39.3k</span>
             
 
             

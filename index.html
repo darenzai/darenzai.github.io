@@ -377,7 +377,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g42apqwrtaj31960u0hdx.jpg');">
+            style="background-image: url('/images/efdaa711fa43fe8960d0dd21b481395a.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -399,7 +399,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g4250mqqxvj31900u0hdv.jpg');">
+            style="background-image: url('/images/首页2.jpeg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -421,7 +421,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g42axlzfqlj31900u0kjs.jpg');">
+            style="background-image: url('images/首页21.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -443,7 +443,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g425o2majsj31940u01kx.jpg');">
+            style="background-image: url('images/首页25.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -534,6 +534,41 @@ $(function () {
                     
 
                     
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fa fa-video-camera"></i>&nbsp;&nbsp;精彩视频
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                     style="height: 400px;"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: '' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: 'https://darenzai-1256870636.cos.ap-beijing.myqcloud.com/%E5%8D%9A%E5%AE%A2%E8%A7%86%E9%A2%91.mp4',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
+                    
 
                     <div id="recommend-sections" class="recommend">
                         
@@ -549,7 +584,7 @@ $(function () {
     
     
     <div class="col s12 m6" >
-        <div class="post-card" style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g424yfhngyj31900u0npe.jpg')">
+        <div class="post-card" style="background-image: url('/images/首页1.jpeg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -574,7 +609,7 @@ $(function () {
     
     
     <div class="col s12 m6" >
-        <div class="post-card" style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g4337yepelj31930u0e83.jpg')">
+        <div class="post-card" style="background-image: url('/images/首页23.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -599,7 +634,7 @@ $(function () {
     
     
     <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g430ehfrmnj319b0u01ky.jpg')">
+        <div class="post-card" style="background-image: url('/images/首页3.jpeg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -624,7 +659,7 @@ $(function () {
     
     
     <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g431p85495j31930u0hdt.jpg')">
+        <div class="post-card" style="background-image: url('/images/首页12.jpeg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -669,7 +704,7 @@ $(function () {
                     <a href="/2019/11/10/linux-wen-ben-bian-ji-qi-shi-yong/">
                         <div class="card-image">
                             
-                            <img src="http://ptagesjik.bkt.clouddn.com/blog/20190619/O5hBoFRg6Eos.jpeg?imageslim" class="responsive-img" alt="Linux文本编辑器使用">
+                            <img src="/images/首页18.jpg" class="responsive-img" alt="Linux文本编辑器使用">
                             
                             <span class="card-title">Linux文本编辑器使用</span>
                         </div>
@@ -712,10 +747,45 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2019/06/19/2018-04-06-tu-de-zui-duan-lu-wen-ti/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            
+                            <span class="card-title"></span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-user fa-fw"></i>
+                                Darenzai
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2019/05/21/linux-jin-cheng-fu-xi/">
                         <div class="card-image">
                             
-                            <img src="http://ptagesjik.bkt.clouddn.com/blog/20190619/NT82hyFaod5x.jpeg?imageslim" class="responsive-img" alt="Linux进程复习">
+                            <img src="/images/首页14.jpeg" class="responsive-img" alt="Linux进程复习">
                             
                             <span class="card-title">Linux进程复习</span>
                         </div>
@@ -761,7 +831,7 @@ $(function () {
                     <a href="/2019/04/27/qin-shi-zhu-shou-wen-dang/">
                         <div class="card-image">
                             
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g4337yepelj31930u0e83.jpg" class="responsive-img" alt="微信小程序+SSM项目文档">
+                            <img src="/images/首页23.jpg" class="responsive-img" alt="微信小程序+SSM项目文档">
                             
                             <span class="card-title">微信小程序+SSM项目文档</span>
                         </div>
@@ -811,7 +881,7 @@ $(function () {
                     <a href="/2019/04/12/linux-wen-jian-xi-tong-fu-xi/">
                         <div class="card-image">
                             
-                            <img src="http://ptagesjik.bkt.clouddn.com/blog/20190619/nJkA6mLwlhFS.jpeg?imageslim" class="responsive-img" alt="Linux文件系统复习">
+                            <img src="/images/首页19.jpg" class="responsive-img" alt="Linux文件系统复习">
                             
                             <span class="card-title">Linux文件系统复习</span>
                         </div>
@@ -857,7 +927,7 @@ $(function () {
                     <a href="/2019/04/01/shi-yong-git-ti-jiao-xiang-mu-dao-github/">
                         <div class="card-image">
                             
-                            <img src="http://ptagesjik.bkt.clouddn.com/blog/20190619/YjTVmhRewqX8.jpeg?imageslim" class="responsive-img" alt="使用git提交项目到Github">
+                            <img src="/images/首页26.jpg" class="responsive-img" alt="使用git提交项目到Github">
                             
                             <span class="card-title">使用git提交项目到Github</span>
                         </div>
@@ -903,7 +973,7 @@ $(function () {
                     <a href="/2019/03/27/qian-duan-shi-xun-bi-ji-html5-css-javascript/">
                         <div class="card-image">
                             
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g4345lb9lyj31hc0u0kjl.jpg" class="responsive-img" alt="前端实训笔记（HTML5+CSS+Javascript）">
+                            <img src="/images/首页22.jpg" class="responsive-img" alt="前端实训笔记（HTML5+CSS+Javascript）">
                             
                             <span class="card-title">前端实训笔记（HTML5+CSS+Javascript）</span>
                         </div>
@@ -957,7 +1027,7 @@ $(function () {
                     <a href="/2019/03/27/2018-03-28-mysql-shu-ju-ku-chang-yong-ming-ling/">
                         <div class="card-image">
                             
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g42qzrnffij31d20u0npd.jpg" class="responsive-img" alt="Mysql数据库常见命令">
+                            <img src="/images/首页4.jpeg" class="responsive-img" alt="Mysql数据库常见命令">
                             
                             <span class="card-title">Mysql数据库常见命令</span>
                         </div>
@@ -1003,7 +1073,7 @@ $(function () {
                     <a href="/2018/12/01/2019-02-01-shu-ju-ku-shi-qu-ge-shi-cuo-wu/">
                         <div class="card-image">
                             
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g431p85495j31930u0hdt.jpg" class="responsive-img" alt="数据库时区格式错误">
+                            <img src="/images/首页9.jpeg" class="responsive-img" alt="数据库时区格式错误">
                             
                             <span class="card-title">数据库时区格式错误</span>
                         </div>
@@ -1046,56 +1116,10 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2018/11/17/2018-04-06-tu-de-zui-duan-lu-wen-ti/">
-                        <div class="card-image">
-                            
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g430p9ahsij31460u0npd.jpg" class="responsive-img" alt="图的最短路">
-                            
-                            <span class="card-title">图的最短路</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                图的最短路
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/数据结构/" class="post-category" target="_blank">
-                                    数据结构
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/图/" target="_blank">
-                            <span class="chip bg-color">图</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2018/11/11/2019-03-24-oracel/">
                         <div class="card-image">
                             
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g431p85495j31930u0hdt.jpg" class="responsive-img" alt="Oracle数据库总结">
+                            <img src="/images/首页12.jpeg" class="responsive-img" alt="Oracle数据库总结">
                             
                             <span class="card-title">Oracle数据库总结</span>
                         </div>
@@ -1141,7 +1165,7 @@ $(function () {
                     <a href="/2018/11/07/2018-03-26-er-cha-ping-heng-shu/">
                         <div class="card-image">
                             
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g430ehfrmnj319b0u01ky.jpg" class="responsive-img" alt="二叉平衡树">
+                            <img src="/images/首页3.jpeg" class="responsive-img" alt="二叉平衡树">
                             
                             <span class="card-title">二叉平衡树</span>
                         </div>
@@ -1187,7 +1211,7 @@ $(function () {
                     <a href="/2018/11/07/2018-04-06-python-xue-xi-shi-pin-tui-jian/">
                         <div class="card-image">
                             
-                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g43135bp40j31960u0e83.jpg" class="responsive-img" alt="Python视频推荐">
+                            <img src="/images/首页7.jpeg" class="responsive-img" alt="Python视频推荐">
                             
                             <span class="card-title">Python视频推荐</span>
                         </div>
@@ -1269,7 +1293,7 @@ $(function () {
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">40.7k</span>
+                <span class="white-color">39.3k</span>
             
 
             

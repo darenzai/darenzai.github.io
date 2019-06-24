@@ -266,7 +266,7 @@ show databas">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://ws3.sinaimg.cn/large/005BYqpggy1g42qzrnffij31d20u0npd.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/首页4.jpeg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -892,7 +892,7 @@ echo "show databases"|mysql -uuser -ppassword</code></pre>
                 <a href="/2019/03/27/qian-duan-shi-xun-bi-ji-html5-css-javascript/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g4345lb9lyj31hc0u0kjl.jpg" class="responsive-img" alt="前端实训笔记（HTML5+CSS+Javascript）">
+                        <img src="/images/首页22.jpg" class="responsive-img" alt="前端实训笔记（HTML5+CSS+Javascript）">
                         
                         <span class="card-title">前端实训笔记（HTML5+CSS+Javascript）</span>
                     </div>
@@ -948,7 +948,7 @@ echo "show databases"|mysql -uuser -ppassword</code></pre>
                 <a href="/2018/12/01/2019-02-01-shu-ju-ku-shi-qu-ge-shi-cuo-wu/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g431p85495j31930u0hdt.jpg" class="responsive-img" alt="数据库时区格式错误">
+                        <img src="/images/首页9.jpeg" class="responsive-img" alt="数据库时区格式错误">
                         
                         <span class="card-title">数据库时区格式错误</span>
                     </div>
@@ -992,6 +992,43 @@ echo "show databases"|mysql -uuser -ppassword</code></pre>
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + 'From: 胡佳艺<br />'
+            + 'Author: Darenzai<br />'
+            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
     
 
@@ -1007,7 +1044,7 @@ echo "show databases"|mysql -uuser -ppassword</code></pre>
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">40.7k</span>
+                <span class="white-color">39.3k</span>
             
 
             
